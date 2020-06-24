@@ -7,6 +7,7 @@
         <meta name="keywords" content="">
 
     <link rel="stylesheet" type="text/css" href="css/contactstyle.css">
+    <script src="js.js"></script>
 </head>
 
 <body>
@@ -27,24 +28,34 @@
     <h1>GET IN TOUCH</h1>
     <p>We'd love to hear from you!</p>
 
-    <form>
+    <div class="formContainer">
+        <form>
         <label for="name">Name</label><br>
-        <input type="text" placeholder="Enter Name" id="name" name="name"><br>
-        
-        <label for="email">Email</label><br>
+       <input type="text" placeholder="Enter Name" id="name" name="name"><br>
+       
+       <label for="email">Email</label><br>
         <input type="text" placeholder="Enter Email" id="email" name="email"><br>
 
-        <label for="type">Reason</label><br>
-        <input type="checkbox" id="getInvolved" name="reason">
+    <div class="checkbox">
+        <label for="Reason">Reason</label><br>
+        <br><input type="checkbox" id="check" name="reason">
         <label for="getInvolved">Get Involved</label>
-        <input type="checkbox" id="press" name="reason">
+        <input type="checkbox" id="check" name="reason">
         <label for="press">Press</label>
-        <input type="checkbox" id="general" name="reason">
+        <input type="checkbox" id="check" name="reason">
         <label for="general">General</label><br>
-
+    </div>
+ 
+    <div class="whatsUp">
         <label for="query">What's up?</label><br>
         <input type="text" placeholder="Tell us more" id="query" name="query"><br>
-    </form>
+    </div>
+    
+        <div class="submit">
+            <button type="submit" id="submit" class="submitbtn">SUBMIT</button>
+        </div>
+        </form>
+    </div>
 
 </body>
 
